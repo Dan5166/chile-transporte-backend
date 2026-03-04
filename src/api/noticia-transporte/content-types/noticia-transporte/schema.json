@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "noticia_transportes",
+  "info": {
+    "singularName": "noticia-transporte",
+    "pluralName": "noticia-transportes",
+    "displayName": "Noticia-transporte"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "fecha": {
+      "type": "datetime",
+      "required": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "autor": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

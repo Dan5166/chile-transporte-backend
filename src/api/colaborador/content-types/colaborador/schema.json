@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colaboradores",
+  "info": {
+    "singularName": "colaborador",
+    "pluralName": "colaboradores",
+    "displayName": "Colaborador"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "resenia": {
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

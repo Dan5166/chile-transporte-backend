@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "red_socials",
+  "info": {
+    "singularName": "red-social",
+    "pluralName": "red-socials",
+    "displayName": "Red-social"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "proveedor": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Instagram",
+        "Facebook",
+        "X",
+        "Youtube",
+        "LinkedIn"
+      ]
+    },
+    "orden": {
+      "type": "integer",
+      "required": true
+    },
+    "activo": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}

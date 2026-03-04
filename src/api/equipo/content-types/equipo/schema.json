@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipos",
+  "info": {
+    "singularName": "equipo",
+    "pluralName": "equipos",
+    "displayName": "Equipo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    },
+    "imagen_empresa": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "area": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Área de Asuntos Legales y Administrativos",
+        "Área de Estudios y Proyectos",
+        "Gerencia"
+      ]
+    },
+    "cargo": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

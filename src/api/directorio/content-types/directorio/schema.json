@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "directorios",
+  "info": {
+    "singularName": "directorio",
+    "pluralName": "directorios",
+    "displayName": "Directorio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "cargo": {
+      "type": "string",
+      "required": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    },
+    "imagen_empresa": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

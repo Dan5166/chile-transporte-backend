@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicitud_membresias",
+  "info": {
+    "singularName": "solicitud-membresia",
+    "pluralName": "solicitud-membresias",
+    "displayName": "Solicitud-membresia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_o_razon_social": {
+      "type": "string",
+      "required": true
+    },
+    "rut": {
+      "type": "string",
+      "required": true
+    },
+    "domicilio": {
+      "type": "text",
+      "required": true
+    },
+    "representante_legal": {
+      "type": "string",
+      "required": true
+    },
+    "mail": {
+      "type": "email",
+      "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
+    "tipo_socio": {
+      "type": "string",
+      "required": true
+    },
+    "tamano_flota": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

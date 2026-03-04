@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memorias",
+  "info": {
+    "singularName": "memoria",
+    "pluralName": "memorias",
+    "displayName": "Memoria"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "archivo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "anio": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
